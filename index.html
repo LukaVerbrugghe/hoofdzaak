@@ -3,13 +3,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kapsalon De Hoofdzaak</title>
+    <title>Kapsalon De Hoofdzaak | Premium Haarverzorging</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
         <nav>
-            <div class="logo">De Hoofdzaak</div>
+            <div class="logo">
+                <span class="logo-icon">✦</span>
+                <span class="logo-text">De Hoofdzaak</span>
+            </div>
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#over">Over Ons</a></li>
@@ -20,23 +28,60 @@
     </header>
 
     <section id="home" class="hero">
+        <div class="hero-overlay"></div>
         <div class="hero-content">
-            <h1>Kapsalon De Hoofdzaak</h1>
-            <p>Waar stijl en expertise samenkomen</p>
-            <a href="#contact" class="cta-button">Maak een Afspraak</a>
+            <div class="hero-badge" data-aos="fade-down">
+                <span>✦</span> Premium Haarverzorging
+            </div>
+            <h1 data-aos="fade-up" data-aos-delay="200">Kapsalon<br><span class="elegant-text">De Hoofdzaak</span></h1>
+            <p data-aos="fade-up" data-aos-delay="400">Waar stijl, elegantie en expertise samenkomen</p>
+            <div class="hero-buttons" data-aos="fade-up" data-aos-delay="600">
+                <a href="#contact" class="cta-button primary">Maak een Afspraak</a>
+                <a href="#diensten" class="cta-button secondary">Onze Diensten</a>
+            </div>
+            <div class="scroll-indicator" data-aos="fade-up" data-aos-delay="800">
+                <span>Scroll om te ontdekken</span>
+                <i class="fas fa-chevron-down"></i>
+            </div>
         </div>
     </section>
 
     <section id="over" class="section">
         <div class="container">
-            <h2>Over Ons</h2>
-            <div class="content-grid">
-                <div class="text">
-                    <p>Welkom bij Kapsalon De Hoofdzaak, uw premium kapsalon in het hart van de stad. Met jarenlange ervaring en een passie voor haarverzorging, bieden wij u de beste service en advies op maat.</p>
-                    <p>Ons team van professionele kappers staat klaar om u te helpen met al uw haarwensen, van een eenvoudige knipbeurt tot complexe kleuringen en styling.</p>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Over Ons</span>
+                <h2>Ervaring & Passie</h2>
+                <div class="divider">
+                    <span></span>
+                    <span class="diamond">◆</span>
+                    <span></span>
                 </div>
-                <div class="image">
-                    <img src="https://via.placeholder.com/600x400/1a1a2e/ffffff?text=Kapsalon+Interieur" alt="Kapsalon interieur">
+            </div>
+            <div class="content-grid">
+                <div class="text" data-aos="fade-right">
+                    <p class="lead">Welkom bij Kapsalon De Hoofdzaak, uw premium kapsalon in het hart van de stad.</p>
+                    <p>Met jarenlange ervaring en een diepe passie voor haarverzorging, bieden wij u de meest exclusieve service en advies op maat. Ons salon is meer dan een kapsalon – het is een oase van rust en verfijning waar u volledig kunt ontspannen.</p>
+                    <p>Ons team van meester-kappers staat klaar om u te helpen met al uw haarwensen, van een verfijnde knipbeurt tot complexe kleuringen en styling. Wij werken uitsluitend met hoogwaardige producten en de nieuwste technieken.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <span class="stat-number">15+</span>
+                            <span class="stat-label">Jaar Ervaring</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">5000+</span>
+                            <span class="stat-label">Tevreden Klanten</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">100%</span>
+                            <span class="stat-label">Toewijding</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="image" data-aos="fade-left">
+                    <div class="image-frame">
+                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?w=800&h=600&fit=crop" alt="Kapsalon interieur">
+                        <div class="frame-decoration"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -44,27 +89,47 @@
 
     <section id="diensten" class="section dark">
         <div class="container">
-            <h2>Onze Diensten</h2>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Onze Diensten</span>
+                <h2>Exclusieve Treatments</h2>
+                <div class="divider">
+                    <span></span>
+                    <span class="diamond">◆</span>
+                    <span></span>
+                </div>
+            </div>
             <div class="services-grid">
-                <div class="service-card">
-                    <img src="https://via.placeholder.com/300x200/16213e/ffffff?text=Knippen" alt="Knippen">
-                    <h3>Knippen</h3>
-                    <p>Professionele knipbeurten voor heren en dames</p>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-cut"></i>
+                    </div>
+                    <h3>Premium Knippen</h3>
+                    <p>Maatwerk knipbeurten met persoonlijk advies en stijlconsultatie</p>
+                    <span class="service-price">Vanaf €45</span>
                 </div>
-                <div class="service-card">
-                    <img src="https://via.placeholder.com/300x200/16213e/ffffff?text=Kleuren" alt="Kleuren">
-                    <h3>Kleuren</h3>
-                    <p>Hoogwaardige kleuringen en highlights</p>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-palette"></i>
+                    </div>
+                    <h3>Kleur Expertise</h3>
+                    <p>Hoogwaardige kleuringen, balayage en highlights met premium producten</p>
+                    <span class="service-price">Vanaf €65</span>
                 </div>
-                <div class="service-card">
-                    <img src="https://via.placeholder.com/300x200/16213e/ffffff?text=Styling" alt="Styling">
-                    <h3>Styling</h3>
-                    <p>Professionele styling voor elke gelegenheid</p>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-magic"></i>
+                    </div>
+                    <h3>Luxe Styling</h3>
+                    <p>Professionele blow-dry, updo's en feeststyling voor speciale gelegenheden</p>
+                    <span class="service-price">Vanaf €35</span>
                 </div>
-                <div class="service-card">
-                    <img src="https://via.placeholder.com/300x200/16213e/ffffff?text=Verzorging" alt="Verzorging">
-                    <h3>Verzorging</h3>
-                    <p>Haarverzorging en behandelingen</p>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3>Haarverzorging</h3>
+                    <p>Diepconditionerende behandelingen en keratine therapieën</p>
+                    <span class="service-price">Vanaf €55</span>
                 </div>
             </div>
         </div>
@@ -72,37 +137,66 @@
 
     <section id="contact" class="section">
         <div class="container">
-            <h2>Contact & Locatie</h2>
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Contact & Locatie</span>
+                <h2>Bezoek Ons Salon</h2>
+                <div class="divider">
+                    <span></span>
+                    <span class="diamond">◆</span>
+                    <span></span>
+                </div>
+            </div>
             <div class="contact-grid">
-                <div class="contact-info">
+                <div class="contact-info" data-aos="fade-right">
                     <div class="info-item">
-                        <h3>Adres</h3>
-                        <p>Hoofdstraat 123</p>
-                        <p>1234 AB Amsterdam</p>
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Adres</h3>
+                            <p>Hoofdstraat 123</p>
+                            <p>1234 AB Amsterdam</p>
+                        </div>
                     </div>
                     <div class="info-item">
-                        <h3>Telefoon</h3>
-                        <p>+31 20 123 4567</p>
+                        <div class="info-icon">
+                            <i class="fas fa-phone-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Telefoon</h3>
+                            <p>+31 20 123 4567</p>
+                        </div>
                     </div>
                     <div class="info-item">
-                        <h3>E-mail</h3>
-                        <p>info@dehoofdzaak.nl</p>
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>E-mail</h3>
+                            <p>info@dehoofdzaak.nl</p>
+                        </div>
                     </div>
                     <div class="info-item">
-                        <h3>Openingstijden</h3>
-                        <ul>
-                            <li>Maandag: 09:00 - 18:00</li>
-                            <li>Dinsdag: 09:00 - 18:00</li>
-                            <li>Woensdag: 09:00 - 18:00</li>
-                            <li>Donderdag: 09:00 - 20:00</li>
-                            <li>Vrijdag: 09:00 - 18:00</li>
-                            <li>Zaterdag: 09:00 - 17:00</li>
-                            <li>Zondag: Gesloten</li>
-                        </ul>
+                        <div class="info-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Openingstijden</h3>
+                            <ul>
+                                <li><span>Maandag - Woensdag</span><span>09:00 - 18:00</span></li>
+                                <li><span>Donderdag</span><span>09:00 - 20:00</span></li>
+                                <li><span>Vrijdag</span><span>09:00 - 18:00</span></li>
+                                <li><span>Zaterdag</span><span>09:00 - 17:00</span></li>
+                                <li><span>Zondag</span><span>Gesloten</span></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="contact-image">
-                    <img src="https://via.placeholder.com/600x500/1a1a2e/ffffff?text=Locatie+Kaart" alt="Locatie kaart">
+                <div class="contact-image" data-aos="fade-left">
+                    <div class="image-frame">
+                        <img src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e?w=800&h=600&fit=crop" alt="Kapsalon sfeer">
+                        <div class="frame-decoration"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -110,12 +204,56 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Kapsalon De Hoofdzaak. Alle rechten voorbehouden.</p>
-            <div class="social-links">
-                <a href="#">Instagram</a>
-                <a href="#">Facebook</a>
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <div class="logo">
+                        <span class="logo-icon">✦</span>
+                        <span class="logo-text">De Hoofdzaak</span>
+                    </div>
+                    <p>Premium haarverzorging met aandacht voor detail en klanttevredenheid.</p>
+                </div>
+                <div class="footer-social">
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-whatsapp"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Kapsalon De Hoofdzaak. Alle rechten voorbehouden.</p>
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000,
+            once: true,
+            offset: 100
+        });
+
+        // Smooth scroll for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
 </body>
 </html>

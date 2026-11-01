@@ -1,0 +1,72 @@
+@import 'tailwindcss';
+
+@theme {
+  --color-cream: #f4efe8;
+  --color-sand: #e8dfd3;
+  --color-espresso: #1c1714;
+  --color-umber: #3a302a;
+  --color-taupe: #8a7d70;
+  --color-brass: #b08d57;
+  --color-brass-light: #c9a66b;
+
+  --font-display: 'Cormorant Garamond', 'Times New Roman', serif;
+  --font-sans: 'Manrope', system-ui, sans-serif;
+
+  --ease-expo: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+@layer base {
+  html {
+    background: var(--color-cream);
+    color: var(--color-espresso);
+    font-family: var(--font-sans);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+  body {
+    background: var(--color-cream);
+    overflow-x: clip;
+  }
+  ::selection {
+    background: var(--color-brass);
+    color: var(--color-cream);
+  }
+  :focus-visible {
+    outline: 1px solid var(--color-brass);
+    outline-offset: 4px;
+  }
+}
+
+/* Lenis recommended styles */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+@utility eyebrow {
+  font-family: var(--font-sans);
+  font-size: 0.7rem;
+  font-weight: 500;
+  letter-spacing: 0.32em;
+  text-transform: uppercase;
+}
+
+@utility gutter {
+  padding-inline: clamp(1rem, 5vw, 5rem);
+}
+
+/* Hidden until the batch reveal in App.tsx animates them in. */
+@media (prefers-reduced-motion: no-preference) {
+  [data-reveal] {
+    visibility: hidden;
+  }
+}

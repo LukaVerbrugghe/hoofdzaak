@@ -1,5 +1,6 @@
 import { useRef } from 'react'
 import { gsap, prefersReducedMotion, useGSAP } from '../lib/motion'
+import Logo from './Logo'
 
 export default function Preloader({ onDone }: { onDone: () => void }) {
   const root = useRef<HTMLDivElement>(null)
@@ -47,9 +48,9 @@ export default function Preloader({ onDone }: { onDone: () => void }) {
         </p>
       </div>
       <div className="mt-4 overflow-hidden pb-2">
-        <p data-pl-line className="font-display text-5xl font-light sm:text-7xl">
-          De <em className="text-brass-light">Hoofdzaak</em>
-        </p>
+        <div data-pl-line>
+          <Logo className="h-20 w-auto sm:h-28" />
+        </div>
       </div>
       <div className="gutter absolute inset-x-0 bottom-0 pb-8">
         <div className="flex items-end justify-between">

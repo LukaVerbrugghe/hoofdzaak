@@ -3,6 +3,7 @@ import FlowingMenu from './reactbits/FlowingMenu'
 import Magnet from './reactbits/Magnet'
 import { contact, nav } from '../data/site'
 import { ScrollTrigger, getLenis, gsap, scrollToSection, useGSAP } from '../lib/motion'
+import Logo from './Logo'
 
 export default function Nav() {
   const bar = useRef<HTMLElement>(null)
@@ -56,8 +57,8 @@ export default function Nav() {
         }`}
       >
         <div className={`gutter flex h-20 items-center justify-between ${open ? 'text-cream' : 'text-espresso'}`}>
-          <button onClick={() => go('top')} className="font-display text-2xl leading-none whitespace-nowrap" aria-label="Naar boven">
-            De <em className="text-brass">Hoofdzaak</em>
+          <button onClick={() => go('top')} className="block" aria-label="Naar boven">
+            <Logo className="h-11 w-auto sm:h-12" />
           </button>
 
           <nav className="hidden items-center gap-8 xl:flex" aria-label="Hoofdmenu">

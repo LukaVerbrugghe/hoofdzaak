@@ -1,6 +1,7 @@
 import CircularText from './reactbits/CircularText'
 import { contact, hours, formatTime, nav } from '../data/site'
 import { scrollToSection } from '../lib/motion'
+import Logo from './Logo'
 
 const socials = [
   { label: 'Facebook', href: contact.facebook },
@@ -14,9 +15,7 @@ export default function Footer() {
     <footer className="gutter relative bg-espresso pt-24 pb-10 text-cream/70">
       <div className="grid gap-14 border-t border-cream/10 pt-16 sm:grid-cols-2 lg:grid-cols-12 lg:gap-6">
         <div className="lg:col-span-4">
-          <p className="font-display text-4xl text-cream">
-            De <em className="text-brass-light">Hoofdzaak</em>
-          </p>
+          <Logo className="h-16 w-auto text-cream" />
           <p className="mt-4 max-w-xs leading-relaxed">Kapsalon in Brugge. Uw kappersbeurt, een aangenaam moment.</p>
         </div>
 
@@ -86,7 +85,17 @@ export default function Footer() {
           </CircularText>
         </button>
         <div className="space-y-1 text-xs text-cream/35 sm:text-right">
-          <p>© {new Date().getFullYear()} Kapsalon De Hoofdzaak · Brugge</p>
+          <p>
+            © {new Date().getFullYear()}{' '}
+            <a
+              href="https://lukaverbrugghe.github.io/luka-verbrugghe-io"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline decoration-cream/20 underline-offset-4 transition-colors hover:text-cream"
+            >
+              Luka Verbrugghe
+            </a>
+          </p>
           <p>Foto's: Unsplash</p>
         </div>
       </div>
